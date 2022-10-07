@@ -128,3 +128,15 @@ Binding(CTRL+INSERT,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-10-07 10:19:15.671
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tMkcJQOS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-10-07 10:19:15.680
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.tMkcJQOS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-10-07 10:19:15.683
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-10-07 10:19:15.684
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tMkcJQOS => OK
