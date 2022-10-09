@@ -27,7 +27,7 @@ public class B {
         System.out.println(list);
         char a = 'a';
         char b = 'b';
-        if(a<b) System.out.println("a");
+        if(a<b) System.out.println("a");  // Characters are comparable while Strings are not.
     }
 
 }
