@@ -31,7 +31,7 @@ public class ClassOne {
         students.add(new Student("Vikas", 56, 210));
         students.add(new Student("Pradeep", 32, 560));
         
-        Collections.sort(students);
+        Collections.sort(students);                            // to sort a user-defined object, it must be comparable
         
         System.out.println(students);
     }
