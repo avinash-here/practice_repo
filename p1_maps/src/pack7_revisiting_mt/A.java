@@ -29,6 +29,7 @@ public class A implements Runnable{
     
     // Setting and Getting Priorities of Main and other threads, in Main class
     
+    // Applying sleep in Main class
     
     
     

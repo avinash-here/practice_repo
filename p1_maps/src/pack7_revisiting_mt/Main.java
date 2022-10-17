@@ -2,6 +2,19 @@ package pack7_revisiting_mt;
 
 public class Main extends Thread{
     
+    @Override
+    public void run() {
+        for(int i = 1; i <= 5; i++) {
+            System.out.println("Iteration " + i);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {                
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Done!");
+    }
+    
     public static void main(String[] args) {
         
         // Executing many threads simultaneously
@@ -46,6 +59,7 @@ public class Main extends Thread{
         t2.start();
       */
         
+      /*
         Main m1 = new Main();
         Main m2 = new Main();
         Main m3 = new Main();
@@ -68,12 +82,52 @@ public class Main extends Thread{
         Thread.currentThread().setPriority(10);
         
         System.out.println("Main method Priority : " + Thread.currentThread().getPriority());
+      */
         
+       /*
+        Main m2 = new Main();
         
+        m2.start();
+       
+        for(int i = 0; i < 5; i++)
+        System.out.println("End of main " + (i+1));
+      */
         
+      /*  Join method
+        K k = new K();
         
+        Thread t = new Thread(k);
         
+        t.start();
         
+        try {
+            t.join();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        System.out.println("The value of sum is " + k.sum);
+      */
+        
+      /*
+        L l1 = new L();
+        L l2 = new L();
+        
+        Thread t1 = new M(l1, "Ram");
+        Thread t2 = new N(l2, "Shyam");
+       
+        t1.start();
+        t2.start();
+      */
+        
+        O o = new O();
+              
+        Thread t1 = new Thread(o, "Dhoni");
+        Thread t2 = new Thread(o, "Kohli");
+        Thread t3 = new Thread(o, "Rohit");
+        
+        t1.start();  t2.start();  t3.start();
         
         
         
