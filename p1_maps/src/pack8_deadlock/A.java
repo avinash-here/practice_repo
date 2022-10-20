@@ -2,6 +2,8 @@ package pack8_deadlock;
 
 public class A {
     
+//    private transient String a;
+    
     public synchronized void funA(B b1) {
         System.out.println("FunA of ClassA starts");
         
