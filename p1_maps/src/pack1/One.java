@@ -7,4 +7,9 @@ public class One extends Thread{
         System.out.println("Run of One");
     }
     
+    @Override
+    public synchronized void start() {
+        run();
+    }
+    
 }
