@@ -1,89 +1,71 @@
 package pack1;
 
 public class Main {
-
     public static void main(String[] args) {
-        
-        KohliThread k = new KohliThread();
-          k.rt = new RohitThread();
-          RohitThread r = new RohitThread();
-            r.dh = new DhoniThread();
-        
-             k.rt.setName("Rohit");
-         
-            r.dh.setName("Dhoni");
-            
-              k.setName("Kholi");
-           
-            
-            
-            r.dh.setPriority(10);
-            
-         r.dh.start();
-         k.rt.start();
-            k.start();
-        
-        
-         
-         
+
+        ThreadB t2=new ThreadB();
+
+        ThreadC t3=new ThreadC();
+        ThreadA t1=new ThreadA();
+
+        t2.setName("Dhoni");
+        t3.setName("Rohit");
+        t1.setName("Kohli");
+
+        t2.setPriority(6);
+        t3.setPriority(4);
+        t1.setPriority(2);
+
+        t2.start();
+        t3.start();
+        t1.start();
 
     }
-
 }
 
-class DhoniThread extends Thread{
-    
-    
-     int sum  = 0;
-     @Override
-    public void run() {
-         
-        
-        
-        for(int i = 1; i <= 20; i++) {
-             sum += i;
-        }
-        
-         System.out.println("Addition of first 20 Number is :"+ sum);
-        
-    }
-    
-       
-}
+class  ThreadA extends Thread{
 
-class KohliThread extends Thread{
-    static Thread rt;
     @Override
     public void run() {
-        
-        try {
-            rt.join();
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        System.out.println("Thread->"+Thread.currentThread().getName()+"  is printing 1 to 10");
+        for (int i = 1; i <11 ; i++) {
+            System.out.println(i);
         }
-        for(int i = 1; i <= 10; i++) {
-             System.out.println(i);
-        }
+
     }
+
 }
 
-class RohitThread extends Thread{
-    
-    static Thread dh;
-    int total = 1;
+class  ThreadB extends Thread{
+
     @Override
     public void run() {
-          try {
-              dh.join();
-          }
-          catch(InterruptedException e ) {
-              
-          }
-        for(int i = 1; i<= 10; i++) {
-            total = total *i;
+
+        System.out.println("Thread->" + Thread.currentThread().getName() + "  is calculating addition of first 20 number");
+        int add = 0;
+        for (int i = 1; i < 21; i++) {
+
+            add += i;
+
         }
-        
-        System.out.println("Product of first 10 number is :" + total);
+        System.out.println(add);
     }
+
+}
+
+class  ThreadC extends Thread{
+
+    @Override
+    public void run() {
+
+        System.out.println("Thread->" + Thread.currentThread().getName() + "  is calculating product of first 10 number");
+        int pod = 1;
+        for (int i = 1; i < 11; i++) {
+
+            pod*= i;
+
+        }
+        System.out.println(pod);
+    }
+
 }

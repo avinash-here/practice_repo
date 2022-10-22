@@ -28,7 +28,7 @@ public class Main2 {
 
 }
 
-class ThreadA extends Thread{
+class ThreadAB extends Thread{
 
     @Override
     public void run(){
@@ -37,7 +37,7 @@ class ThreadA extends Thread{
 
   }
 
-  class ThreadB extends Thread{
+  class ThreadBC extends Thread{
 
     @Override
     public void run(){
