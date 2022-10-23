@@ -17,7 +17,19 @@ public class Main {
         t1.setPriority(2);
 
         t2.start();
+//        try {
+//            t2.join();
+//        } catch (InterruptedException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
         t3.start();
+//        try {
+//            t3.join();
+//        } catch (InterruptedException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
         t1.start();
 
     }
