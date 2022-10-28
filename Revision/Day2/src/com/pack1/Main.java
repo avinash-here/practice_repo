@@ -42,7 +42,7 @@ public class Main {
 		System.out.println(false ^ false);// false
 		
 		// Bitwise Logical Operator
-		int n = 8;  int p = 6;   // 8 : 1000   6 : 0110
+		int n = 8;  int p = 6;   //  8 : 1000   6 : 0110
 		System.out.println(n&p);  // 0   Bitwise AND operator
 		System.out.println(n|p);  // 14  Bitwise OR operator
 		System.out.println(n^p);  // 14  Bitwise XOR operator
@@ -52,6 +52,36 @@ public class Main {
 		
 		System.out.println(10 >> 1);   // 01010 -> 00101
 		System.out.println(10 << 1);   // 01010 -> 10100
+		
+		// Short-Circuit Operators : && and ||
+		// The difference between boolean logical operators and short-circuit operators is,
+		// boolean logical operator checks all the expressions before reaching at a result.
+		// while short circuit decides the result at false in && and at true in ||.
+		
+		// Example:
+		int g = 10;  int h = 10;
+		
+		if((g++ == 10) | (h++ == 10)) {
+			System.out.println(g + "  " + h);  // 11  11 
+		}
+		
+		g = 10;  h = 10;
+		if((g++ == 10) || (h++ == 10)) {
+			System.out.println(g + "  " + h);  // 11  10
+		}
+		
+		g = 10;  h = 10;
+		
+		if((g++ != 10) & (h++ != 10)) { }
+			System.out.println(g + "  " + h);  // 11  11 
+		
+		
+		g = 10;  h = 10;
+		if((g++ != 10) && (h++ != 10)) { }
+			System.out.println(g + "  " + h);  // 11  10
+		
+		
+		
 		
 	}
 
