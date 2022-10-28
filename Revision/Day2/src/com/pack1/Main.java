@@ -80,8 +80,24 @@ public class Main {
 		if((g++ != 10) && (h++ != 10)) { }
 			System.out.println(g + "  " + h);  // 11  10
 		
+		// What is TypeCasting?
+		// The conversion of one data type to any other compatible data type is known as Type Casting.
+			
+		// There are two kinds of Type Casting:
+		//   Implicit Type Casting : conversion of smaller data type to higher data type.
+		//   Explicit Type Casting : conversion of higher data type to smaller data type.
+			
+		// Example of Implicit Type Casting:
+			short s = 100;
+			int i = s;
+			
+		// Example of Explicit Type Casting:
+			int j = 100;
+			short t = (short)j; 
 		
+			
 		
+			
 		
 	}
 
