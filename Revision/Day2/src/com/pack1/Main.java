@@ -23,23 +23,35 @@ public class Main {
 		// XOR operator: '^' is the symbol for xor operator. It returns true if both the operands are different,
 		//               otherwise it returns false.
 		
-		// AND operator
+		// Logical AND operator
 		System.out.println(true & true);  // true
 		System.out.println(true & false); // false
 		System.out.println(false & true); // false
 		System.out.println(false & false);// false
 		
-		// OR operator
+		// Logical OR operator
 		System.out.println(true | true);  // true
 		System.out.println(true | false); // true
 		System.out.println(false | true); // true
 		System.out.println(false | false);// false
 		
-		// AND operator
+		// XOR operator
 		System.out.println(true ^ true);  // false
 		System.out.println(true ^ false); // true
 		System.out.println(false ^ true); // true
 		System.out.println(false ^ false);// false
+		
+		// Bitwise Logical Operator
+		int n = 8;  int p = 6;   // 8 : 1000   6 : 0110
+		System.out.println(n&p);  // 0   Bitwise AND operator
+		System.out.println(n|p);  // 14  Bitwise OR operator
+		System.out.println(n^p);  // 14  Bitwise XOR operator
+		
+		// Bitwise Right Shift Operator  '>>'  This operator decreases the value.
+		// Bitwise Left Shift Operator   '<<'  This operator increases the value.
+		
+		System.out.println(10 >> 1);   // 01010 -> 00101
+		System.out.println(10 << 1);   // 01010 -> 10100
 		
 	}
 
