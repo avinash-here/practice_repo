@@ -96,7 +96,14 @@ public class Main {
 			short t = (short)j; 
 		
 			
+		byte b = 5;
+		byte c = 4;
+		byte d = (byte)(b*c);   
+		//  When we do any arithmetic operation on any primitive data type, then the 
+		//  resultant data type will be decided on the following formula:
+		//  MAX(int, type1, type2, . . . . )
 		
+		System.out.println(d);
 			
 		
 	}
