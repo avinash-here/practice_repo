@@ -104,6 +104,8 @@ public class Main {
 		//  MAX(int, type1, type2, . . . . )
 		
 		System.out.println(d);
+		
+		System.out.println("Not Done anything specific on 30th of October.");
 			
 		
 	}
