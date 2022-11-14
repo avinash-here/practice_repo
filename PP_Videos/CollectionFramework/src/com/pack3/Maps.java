@@ -31,6 +31,7 @@ public class Maps {
 		map.put(new Student(22, 560, "DevAshish"), "Five");		
 		map.put(new Student(55, 420, "Anish"), "Two Hundred");
 		map.put(new Student(35, 620, "Rajesh"), "Hundred");
+		map.put(new Student(20, 640, "Umesh"), "Sixty");
 		
 		
 		
