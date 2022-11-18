@@ -6,5 +6,11 @@ public enum City {
     PUNE,
     PATNA,
     INDORE;
+    
+    // public final City PATNA = new City();
 
+}
+
+class Student{
+    String name;
 }
