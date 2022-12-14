@@ -18,5 +18,7 @@ public interface ProductDao {
 	public String deleteProductByProductName(String pname)throws ProductException;
 	
 	public Product getProductByProductName(String pname)throws ProductException;
+	
+	public String deleteProductWhoseNameStart(String name)throws ProductException;
 
 }

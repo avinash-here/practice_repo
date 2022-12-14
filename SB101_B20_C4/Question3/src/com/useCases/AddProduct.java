@@ -17,12 +17,16 @@ public class AddProduct {
 		
 		System.out.println("Enter product id");
 		int productid = scan.nextInt();
+		
 		System.out.println("Enter the product name");
 		String productName = scan.next();
+		
 		System.out.println("Enter product price");
 		int price = scan.nextInt();
+		
 		System.out.println("Enter  product quantity");
 		int quantity = scan.nextInt();
+		
 		scan.close();
 		
 		Product product = new Product(productid, productName, price, quantity);

@@ -220,6 +220,46 @@ public class ProductDaoImpl implements ProductDao{
 		
 		return product;
 		
+	}
+
+	@Override
+	public String deleteProductWhoseNameStart(String name) throws ProductException {
+		
+		String message = null;
+		
+		try(Connection conn = DBUtil.provideConnection()) {
+			
+			PreparedStatement ps = conn.prepareStatement("select * from product where productName LIKE '" + name + "%'");
+						
+			ResultSet rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				
+//				int productId = rs.getInt("productId");
+				String productName = rs.getString("productName");
+//				int price = rs.getInt("price");
+//				int quantity = rs.getInt("quantity");
+				
+//				product = new Product(productId, productName, price, quantity);
+				
+				PreparedStatement ps2 = conn.prepareStatement("delete from product where productName LIKE '" + name + "%'");
+				
+				ps2.executeUpdate();
+				
+				message = productName + " is deleted successfully!";
+				
+			}
+			else {
+				throw new ProductException("Didn't found such product!");
+			}
+			
+		} catch (Exception e) {
+			
+			System.out.println(e.getMessage());
+			
+		}
+
+		return message;
 	}	
 
 }
