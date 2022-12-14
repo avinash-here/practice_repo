@@ -15,12 +15,12 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 		
-		String url = "jdbc:mysql://localhost:3306/sb101web20c4";
+		String url = "jdbc:mysql://localhost:3306/b21_sb101_c4";
 		
 		Connection conn = null;
 		
 		try {
-			conn = DriverManager.getConnection(url, "root", "Avinash@0241");
+			conn = DriverManager.getConnection(url, "root", "root");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
