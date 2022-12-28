@@ -7,6 +7,7 @@ public class Main {
 	the methods of functional interfaces.
 	It is a shorthand notation of a lambda expression to call a method.
 	We can replace lambda expression with method reference (:: operator)
+	
 	on left side we put class/object name and on the other hand we put new/method name
 	
 	- Method reference for a non-static method  ==>  object::methodName

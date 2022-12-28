@@ -28,7 +28,9 @@ public class Main {
 		
 		System.out.println("Original List");
 		list.forEach(s -> System.out.println(s));
+		
 		System.out.println();
+		
 		System.out.println("Transformed List");
 		filtered.forEach(s -> System.out.println(s));
 		

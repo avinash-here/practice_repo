@@ -32,7 +32,9 @@ public static void main(String[] args) {
 		
 		System.out.println("Employees List");
 		emps.forEach(e -> System.out.println(e));
+		
 		System.out.println();
+		
 		System.out.println("Original Students List");
 		list.forEach(s -> System.out.println(s));
 	}
