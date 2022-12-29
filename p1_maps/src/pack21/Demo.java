@@ -1,29 +1,27 @@
 package pack21;
 
-import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 public class Demo {
     
-    // Syntactical     Logical;
-    
     public static void main(String[] args)  {
         
-        String s = "Vishal";
+       String s = "100";
+       
+       int i = Integer.valueOf(s);
+       
+       System.out.println(i+15);
         
-        try {
-            s.substring(0, 4);
-            System.out.println("this is the try block");
-        }catch (NullPointerException e) {
-            // TODO: handle exception
-            System.out.println("This is the catch block");
-        }finally {
-            System.out.println("This is the finally block");
-        }
-        
-        
-        
-        
-        
+       Consumer<String> c = str -> {System.out.println(str);};
+       
+       List<String> list = Arrays.asList("Avinash", "Kumar", "Raghav", "Mishra");
+       
+       list.stream().map((Function<String, Integer>) el -> {
+           return 1;
+       });
     }
 
 }
