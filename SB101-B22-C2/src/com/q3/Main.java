@@ -5,20 +5,16 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 		
 		DhoniThread dt = new DhoniThread();
-		RohitThread rt = new RohitThread();
-		ViratThread vt = new ViratThread();
+		RohitThread rt = new RohitThread(dt);
+		ViratThread vt = new ViratThread(rt);
 		
 		dt.setName("Dhoni");  rt.setName("Rohit");  vt.setName("Virat");
 		
 		dt.setPriority(10);
-		dt.start();
-		dt.join();
 		
-		rt.start();
-		rt.join();
-		
-		vt.start();
-		
+		dt.start();			
+		rt.start();		
+		vt.start();		
 		
 	}
 
