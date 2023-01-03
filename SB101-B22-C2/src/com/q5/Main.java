@@ -24,6 +24,7 @@ public class Main {
 		
 		for(String line : allLines) pr.println(line);
 		
+		pr.flush();
 		pr.close();
 		
 		System.out.println("Done");		
