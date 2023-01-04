@@ -15,6 +15,7 @@ public class CustomerDaoImpl implements CustomerDao{
 
 	@Override
 	public String addCustomerToRoom(Customer customer, int roomNumber) throws RoomException {
+		
 		String message = "Customer Not Added";
 		
 		try (Connection conn = DBUtil.provideConnection()){

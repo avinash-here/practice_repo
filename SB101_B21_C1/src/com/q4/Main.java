@@ -8,7 +8,7 @@ public class Main {
 
 	/*
 	
-	Features of Stream: -
+	Features of Stream API: 
 	
 	1. Stream does not store the elements, it only represents the elements in a sequence.
 	
@@ -21,11 +21,11 @@ public class Main {
 	elements, transforming some elements, etc.
 	
 	
-	Intermediate methods
+	Intermediate methods : Methods that return another stream as a result.
 		1. filter()
 		2. map()
 		
-	Terminal methods
+	Terminal methods : Methods that mark the end of the stream and return the result.
 		1. forEach()
 		2. max()
 		3. min()

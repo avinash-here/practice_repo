@@ -14,7 +14,7 @@ public class Demo2 {
 		
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("employeedata.txt"));
 		
-		List<Employee> list = (List<Employee>) ois.readObject();
+		List<Employee> list = (List) ois.readObject();
 		ois.close();
 		
 		list.forEach(emp -> System.out.println(emp));

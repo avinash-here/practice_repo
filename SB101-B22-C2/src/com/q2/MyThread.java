@@ -17,7 +17,7 @@ public class MyThread implements Callable<String>{
 	public String call() throws Exception {
 		
 		String res = "Roll " + st.getRoll() + " student is "; 
-		
+		System.out.println("This is done by " + Thread.currentThread().getName());
 		if(st.getMarks() < 500) res += "Fail";
 		else res += "Pass";
 		
